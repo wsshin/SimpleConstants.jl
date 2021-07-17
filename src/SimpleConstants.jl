@@ -16,11 +16,11 @@ const ℏ = ℎ / 2π  # reduced Planck constant in J·sec; unicode character  U
 const Å = 1e-10  # angstrom in meter; unicode character U+212B (entered by \Angstrom tab)
 
 # Compound constants
-const πc₀ = π * c₀
+const πc₀ = π * c₀  # e.g., angular frequency ω = 2πc₀ / λ
 const π²c₀ = π^2 * c₀
-const iπ = im * π
-const i2π = 2iπ
-const ℎc₀ = ℎ * c₀
+const iπ = im * π  # e.g., exp(iπ/3)
+const i2π = 2iπ  # e.g., exp(i2π/3)
+const ℎc₀ = ℎ * c₀  # e.g., photon energy E = ℎc₀ / λ
 
 ## SI prefixes
 # Prefixes > 1
