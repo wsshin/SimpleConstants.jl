@@ -11,9 +11,9 @@ const c₀ = 2.99_792_458e8  # speed of light in vacuum in m/s
 const μ₀ = 1.256_637_062_12e-6  # vacuum permeability in H/m; previously 4π×10⁻⁷ H/m; see 2019 redefinition of SI base units
 const ε₀ = 1 / (c₀^2 * μ₀)  # vacuum permittivity in F/m
 const η₀ = √(μ₀ /ε₀)  # vacuum impedance in Ohm
-const ℎ = 6.626_070_15e-34  # Planck constant in J⋅sec
-const ℏ = ℎ / 2π  # reduced Planck constant in J·sec
-const Å = 1e-10  # angstrom in meter
+const ℎ = 6.626_070_15e-34  # Planck constant in J⋅sec; unicode character U+210E (entered by \planck tab)
+const ℏ = ℎ / 2π  # reduced Planck constant in J·sec; unicode character  U+210F
+const Å = 1e-10  # angstrom in meter; unicode character U+212B (entered by \Angstrom tab)
 
 # Compound constants
 const πc₀ = π * c₀
