@@ -5,13 +5,15 @@ export πc₀, π²c₀, iπ, i2π, ℎc₀
 export yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca
 export deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto
 
+## Physical and mathematical constants
 # Basic constants
-const c₀ = 2.99_792_458e8  # in m/s
-const μ₀ = 1.256_637_062_12e-6  # in H/m; previously 4π×10⁻⁷ H/m; see 2019 redefinition of SI base units
-const ε₀ = 1 / (c₀^2 * μ₀)  # in F/m
-const η₀ = √(μ₀ /ε₀)  # in Ohm
-const ℎ = 4.135_667_696e-15  # in eV·sec
-const ℏ = ℎ / 2π  # in eV·sec
+const c₀ = 2.99_792_458e8  # speed of light in vacuum in m/s
+const μ₀ = 1.256_637_062_12e-6  # vacuum permeability in H/m; previously 4π×10⁻⁷ H/m; see 2019 redefinition of SI base units
+const ε₀ = 1 / (c₀^2 * μ₀)  # vacuum permittivity in F/m
+const η₀ = √(μ₀ /ε₀)  # vacuum impedance in Ohm
+const ℎ = 6.626_070_15e-34  # Planck constant in J⋅sec
+const ℏ = ℎ / 2π  # reduced Planck constant in J·sec
+const Å = 1e-10  # angstrom in meter
 
 # Compound constants
 const πc₀ = π * c₀
