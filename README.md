@@ -1,5 +1,9 @@
 # SimpleConstants
 
+[![Build status](https://github.com/wsshin/SimpleConstants.jl/workflows/CI/badge.svg)](https://github.com/wsshin/SimpleConstants.jl/actions)
+[![codecov.io](https://github.com/wsshin/SimpleConstants.jl/coverage.svg?branch=main)](https://github.com/wsshin/SimpleConstants.jl?branch=main)
+
+
 **SimpleConstants** defines the values of some fundamental constants of physics in SI units.  [PhysicalConstants](https://github.com/JuliaPhysics/PhysicalConstants.jl) provides a complete set of fundamental constants with units, but in many cases of writing scientific code we care only about the values of the fundamental constants without units.  SimpleConstants is a lightweight package defining those values.  
 
 SimpleConstants utilizes Unicode symbols as much as possible to define compact symbols to store the fundamental constants (e.g., `ε₀` instead of `eps_0` or `ε_0`).  It further promotes compactness by defining _compound constants_ that are products of fundamental constants that frequently appear in equations.  For example,
