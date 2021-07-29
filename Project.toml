@@ -1,7 +1,7 @@
 name = "SimpleConstants"
 uuid = "6ca440b6-64d6-4b6c-88af-e5d091cb43b1"
 authors = ["Wonseok Shin <wsshin97@gmail.com> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [compat]
 julia = "^1.0"
