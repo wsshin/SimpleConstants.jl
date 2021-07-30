@@ -1,7 +1,7 @@
 # SimpleConstants
 
-[![Build status](https://github.com/wsshin/SimpleConstants.jl/workflows/CI/badge.svg)](https://github.com/wsshin/SimpleConstants.jl/actions)
-[![codecov.io](https://github.com/wsshin/SimpleConstants.jl/coverage.svg?branch=main)](https://github.com/wsshin/SimpleConstants.jl?branch=main)
+[![CI](https://github.com/wsshin/SimpleConstants.jl/workflows/CI/badge.svg)](https://github.com/wsshin/SimpleConstants.jl/actions)
+[![Codecov](http://codecov.io/github/wsshin/SimpleConstants.jl/coverage.svg?branch=main)](http://codecov.io/github/wsshin/SimpleConstants.jl?branch=main)
 
 
 **SimpleConstants** defines the values of some fundamental constants of physics in SI units.  [PhysicalConstants](https://github.com/JuliaPhysics/PhysicalConstants.jl) provides a complete set of fundamental constants with units, but in many cases of writing scientific code we care only about the values of the fundamental constants without units.  SimpleConstants is a lightweight package defining those values.  
