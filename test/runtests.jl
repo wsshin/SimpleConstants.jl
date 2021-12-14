@@ -8,4 +8,10 @@ using Test
 
     @test exp(i2π/3) == exp(im * 2π / 3)
     @test exp(iπ/3) == exp(im * π / 3)
+
+    @test e⁻ < 0
+    @test e⁺ > 0
+    @test e⁻ + e⁺ == 0
+
+    @test 180° ≈ π
 end
