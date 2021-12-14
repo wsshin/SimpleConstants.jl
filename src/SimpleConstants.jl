@@ -1,6 +1,6 @@
 module SimpleConstants
 
-export c₀, μ₀, ε₀, η₀, ℎ, ℏ, Å
+export c₀, μ₀, ε₀, η₀, ℎ, ℏ, e⁻, e⁺, Å
 export πc₀, π²c₀, iπ, i2π, ℎc₀
 export yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca
 export deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto
@@ -13,6 +13,8 @@ const ε₀ = 1 / (c₀^2 * μ₀)  # vacuum permittivity in F/m
 const η₀ = √(μ₀ /ε₀)  # vacuum impedance in ohm (Ω)
 const ℎ = 6.626_070_15e-34  # Planck constant in joule⋅sec (J⋅s); unicode character U+210E (entered by \planck tab)
 const ℏ = ℎ / 2π  # reduced Planck constant in joule⋅sec (J·s); unicode character  U+210F
+const e⁻ = -1.602_176_634e-19  # charge of single electron in coulomb (C); negative value
+const e⁺ = -e⁻  # charge of single proton in coulomb (C); positive value
 const Å = 1e-10  # angstrom in meter (m); unicode character U+212B (entered by \Angstrom tab)
 
 # Compound constants
