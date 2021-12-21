@@ -2,6 +2,7 @@ module SimpleConstants
 
 export c₀, μ₀, ε₀, η₀, ℎ, ℏ, e⁻, e⁺, Å, °
 export πc₀, π²c₀, iπ, i2π, ℎc₀
+export eV2meter, meter2eV
 export yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca
 export deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto
 
@@ -24,6 +25,9 @@ const π²c₀ = π^2 * c₀
 const iπ = im * π  # e.g., exp(iπ/3)
 const i2π = 2iπ  # e.g., exp(i2π/3)
 const ℎc₀ = ℎ * c₀  # e.g., photon energy E = ℎc₀ / λ
+
+eV2meter(E_ineV::Real) = (E_inJ = E_ineV * e⁺; λ_inmeter = ℎc₀ / E_inJ)  # λ = c₀ / ν = hc₀ / hν
+meter2eV(λ_inmeter::Real) = (E_inJ = ℎc₀ / λ_inmeter; E_ineV = E_inJ / e⁺)
 
 ## SI prefixes
 # Prefixes > 1
