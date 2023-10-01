@@ -16,5 +16,5 @@ SimpleConstants also defines all the SI prefixes (e.g., `kilo` and `milli`).  [U
 using SimpleConstants
 λ = 1.55micro
 λunit = nano
-println("λ = $(round(λ/λunit, sigdigits=3)) $(λunit)m.")  # prints "λ = 1550.0 nm."
+println("λ = $(round(λ/λunit, sigdigits=3)) $(λunit)m.")  # print out "λ = 1550.0 nm."
 ```
