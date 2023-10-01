@@ -1,8 +1,10 @@
 ## SI prefixes ##
-export yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca
-export deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto
+export quetta, ronna, yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca
+export deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto, ronto, quecto
 
 # Prefixes > 1
+const quetta = 1e30
+const ronna = 1e27
 const yotta = 1e24
 const zetta = 1e21
 const exa = 1e18
@@ -25,3 +27,5 @@ const femto = 1e-15
 const atto = 1e-18
 const zepto = 1e-21
 const yocto = 1e-24
+const ronto = 1e-27
+const quecto = 1e-30
