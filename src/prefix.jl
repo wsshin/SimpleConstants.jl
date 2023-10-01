@@ -2,6 +2,7 @@
 export quetta, ronna, yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca
 export uni
 export deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto, ronto, quecto
+export SI_PREFIXES
 
 struct SIPrefix
     name::String
@@ -50,3 +51,9 @@ const zepto = SIPrefix("zepto", "z", 1e-21)
 const yocto = SIPrefix("yocto", "y", 1e-24)
 const ronto = SIPrefix("ronto", "r", 1e-27)
 const quecto = SIPrefix("quecto", "q", 1e-30)
+
+const SI_PREFIXES = reverse([
+    quetta, ronna, yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca,
+    uni,
+    deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto, ronto, quecto
+])
