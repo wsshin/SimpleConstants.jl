@@ -1,5 +1,6 @@
 ## SI prefixes ##
 export quetta, ronna, yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca
+export uni
 export deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto, ronto, quecto
 
 struct SIPrefix
@@ -32,6 +33,9 @@ const mega = SIPrefix("mega", "M", 1e6)
 const kilo = SIPrefix("kilo", "k", 1e3)
 const hecto = SIPrefix("hecto", "h", 1e2)
 const deca = SIPrefix("deca", "da", 1e1)
+
+# Prefix = 1
+const uni = SIPrefix("uni", "", 1e0)
 
 # Prefixes < 1
 const deci = SIPrefix("deci", "d", 1e-1)
