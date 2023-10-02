@@ -28,6 +28,8 @@ using Test
         @test prefix * x == prefix.factor * x
         @test x / prefix == x / prefix.factor
         @test prefix / x == prefix.factor / x
+        @test x ^ prefix == x ^ prefix.factor
+        @test prefix ^ x == prefix.factor ^ x
 
         xs = 1:10
         @test x .* prefix == x .* prefix.factor
