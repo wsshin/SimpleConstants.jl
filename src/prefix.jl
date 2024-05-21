@@ -17,12 +17,15 @@ Base.broadcastable(x::SIPrefix) = x.factor
 
 Base.:*(x::SIPrefix, y) = x.factor * y
 Base.:*(x, y::SIPrefix) = x  * y.factor
+Base.:*(x::SIPrefix, y::SIPrefix) = x.factor  * y.factor
 
 Base.:/(x::SIPrefix, y) = x.factor / y
 Base.:/(x, y::SIPrefix) = x / y.factor
+Base.:/(x::SIPrefix, y::SIPrefix) = x.factor / y.factor
 
 Base.:^(x::SIPrefix, y) = x.factor ^ y
 Base.:^(x, y::SIPrefix) = x ^ y.factor
+Base.:^(x::SIPrefix, y::SIPrefix) = x.factor ^ y.factor
 
 # Prefixes > 1
 const quetta = SIPrefix("quetta", "Q", 1e30)
